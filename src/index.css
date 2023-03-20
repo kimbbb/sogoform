@@ -3,6 +3,8 @@ body {
   font-family: 'Inter';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FBFBFB;
+  user-select:none /* 드래그 방지 */
 }
 
 code {

@@ -71,6 +71,7 @@ export const go = styled.button`
 export const move = styled.a`
   text-decoration:none;
   color:#fff;
+  font-weight:600;
   &:hover{
     color:#74E9A3;
   }

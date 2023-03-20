@@ -17,7 +17,7 @@ function Login() {
             <L.detail placeholder="ID" type='text'/>
             <L.detail placeholder="PASSWORD" type='password'/>
             <L.go onClick={()=>{navigate('/main')}}>LOGIN</L.go>
-            <L.text>아직 회원이 아니라면? <L.move href="/sign">회뭔가입</L.move></L.text>
+            <L.text>아직 회원이 아니라면? <L.move href="/sign">회원가입</L.move></L.text>
           </L.contents>
         </L.main>
 
