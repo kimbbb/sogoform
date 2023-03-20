@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import * as L from "../../styled/login"
 
 
-function Login() {
+function Sign() {
   
   let navigate=useNavigate();
 
@@ -13,11 +13,11 @@ function Login() {
 
         <L.main>
           <L.contents>
-            <L.header>LOGIN</L.header>
+            <L.header>SIGN UP</L.header>
             <L.detail placeholder="ID" type='text'/>
             <L.detail placeholder="PASSWORD" type='password'/>
-            <L.go onClick={()=>{navigate('/main')}}>LOGIN</L.go>
-            <L.text>아직 회원이 아니라면? <L.move href="/sign">회뭔가입</L.move></L.text>
+            <L.go onClick={()=>{navigate('/')}}>SIGN UP</L.go>
+            <L.text>이미 회원이라면? <L.move href="/">로그인</L.move></L.text>
           </L.contents>
         </L.main>
 
@@ -31,4 +31,4 @@ function Login() {
   )
 }
 
-export default Login;
+export default Sign;
