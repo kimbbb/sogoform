@@ -2,6 +2,7 @@ import Header from "../../component/Header";
 import * as M from "../../styled/main"
 import Carousel from "../../images/main-img.png"
 import { useNavigate } from "react-router-dom";
+import Button from "../../component/Button";
 
 function Main() {
 
@@ -17,6 +18,7 @@ function Main() {
         </M.gidebox>
         <M.footer/>
       </M.box>
+      <Button/>
     </>
   )
 }
