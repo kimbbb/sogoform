@@ -26,6 +26,7 @@ export const faq = styled.div`
   width:100%;
   height:170px;
   margin: 60px 0px;
+  cursor: pointer;
 `
 
 export const tip = styled.div`

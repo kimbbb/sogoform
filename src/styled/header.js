@@ -23,7 +23,7 @@ export const logo = styled.img`
 
 export const move = styled.a`
   text-decoration:none;
-  color:#828282;
+  color:#c9c9c9;
   margin-left:20px;
   &:hover{
     color:#74E9A3;
@@ -35,7 +35,7 @@ export const move = styled.a`
 
 export const logout = styled.a`
   text-decoration:none;
-  color:#828282;
+  color:#c9c9c9;
   position: absolute;
   right: 15%;
   &:hover{
