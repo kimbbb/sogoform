@@ -29,22 +29,28 @@ export const list = styled.div`
   transform:translate(-50%);
   `
   
-  export const imgbox = styled.div`
-    width:100%;
-    height:300px;
-    background-color:#F5F5F5;
-    margin:30px 0px;
-    border:none;
-    position:relative;
-  `
+export const imgbox = styled.div`
+  width:100%;
+  height:300px;
+  background-color:#F5F5F5;
+  margin:30px 0px;
+  border:none;
+  position:relative;
+`
 
-  export const uplode = styled.input`
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-  
-  `
+export const uplode = styled.input`
+  margin:20px;
+  position:relative;
+`
+
+export const preview = styled.div`
+  height:100%;
+  width:100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`
 
 export const title = styled.input`
   width:100%;

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const head = styled.div`
   display: flex;
@@ -22,14 +22,18 @@ export const logo = styled.img`
   cursor: pointer;
 `
 
+
 export const move = styled.a`
   text-decoration:none;
   cursor: pointer;
   color:#c9c9c9;
   margin-left:20px;
-  &:hover{
+
+  ${({isHere}) => isHere && css`
     color:#74E9A3;
-  }
+  `};
+
+
   &:focus{
     color:#74E9A3;
   }
