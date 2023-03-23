@@ -24,7 +24,15 @@ function Sell() {
       <S.box>
         <S.list>
           <S.imgbox>
-            <S.preview>{imageSrc && <img style={{height: '100%', maxWidth:'100%', position:'absolute', left:'50%', transform:'translate(-50%)' }} className="imgPreview" src={imageSrc} alt="preview-img"/>}</S.preview>
+            <S.preview>{imageSrc && <img style={
+              {
+                height: '100%', 
+                maxWidth:'100%', 
+                position:'absolute', 
+                left:'50%', 
+                transform:'translate(-50%)' 
+              }} 
+                className="imgPreview" src={imageSrc} alt="preview-img"/>}</S.preview>
             <S.uplode type="file" accept="image/*" onChange={(e)=>{encoderFileToBase64(e.target.files[0])}}/>
           </S.imgbox>
           

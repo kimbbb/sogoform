@@ -32,9 +32,10 @@ export const move = styled.a`
   ${({isHere}) => isHere && css`
     color:#74E9A3;
   `};
-
-
   &:focus{
+    color:#74E9A3;
+  }
+  &:hover{
     color:#74E9A3;
   }
 `
