@@ -19,10 +19,12 @@ export const logo = styled.img`
   width:240px;
   height:24px;
   margin-right:20px;
+  cursor: pointer;
 `
 
 export const move = styled.a`
   text-decoration:none;
+  cursor: pointer;
   color:#c9c9c9;
   margin-left:20px;
   &:hover{
@@ -35,6 +37,7 @@ export const move = styled.a`
 
 export const logout = styled.a`
   text-decoration:none;
+  cursor: pointer;
   color:#c9c9c9;
   position: absolute;
   right: 15%;

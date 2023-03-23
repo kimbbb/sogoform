@@ -2,6 +2,9 @@ import Header from "../../component/Header"
 import * as S from "../../styled/sell";
 
 function Sell() {
+
+  const banklist = ['NH 농협', '카카오뱅크', 'KB 국민', '신한', '우리', '토스뱅크', 'IBK 기업은행', '하나', '새마을', '부산', '대구', '케이뱅크', '신협', '우체국', 'SC 제일', '경남', '광주', '수협', '전북', '저축은행', '제주','씨티', 'KDB 산업', '산림조합', 'SBI 저축은행', 'BOA', '중국', 'HSBC', '중국공상', '도이치', 'JP모건', 'BNO파라바', '중국건설']
+
   return(
     <>
     <Header/>
@@ -17,8 +20,13 @@ function Sell() {
           <S.text>은행 정보</S.text>
           <S.bank>
             <S.bankname>
-              <S.bankoption>농협</S.bankoption>
-              <S.bankoption>토스</S.bankoption>
+              {
+                banklist.map((a, i)=>{
+                  return(
+                    <S.bankoption>{a}</S.bankoption>
+                  )
+                })
+              }
             </S.bankname>
             <S.account type='number' min='1' placeholder="계좌번호 입력"/>
             <S.name placeholder="예금자명"/>

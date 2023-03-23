@@ -27,6 +27,7 @@ export const faq = styled.div`
   height:170px;
   margin: 60px 0px;
   cursor: pointer;
+  border-radius:20px;
 `
 
 export const tip = styled.div`
