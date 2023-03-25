@@ -11,6 +11,7 @@ function Sign() {
   let [selected, setSelected]=useState("");
   let [id, setId]=useState();
   let [password, setPassword]=useState();
+  let [phone, setPhone]=useState();
 
   useEffect(()=>{
     console.log(selected);
@@ -25,10 +26,11 @@ function Sign() {
           <L.contents>
             <L.header>SIGN UP</L.header>
             <L.detail placeholder="ID" type='text' onChange={(e)=>{setId(e.target.value)}}/>
-            <L.detail placeholder="PASSWORD" type='password' onChange={(e)=>{setId(e.target.value)}}/>
+            <L.detail placeholder="PASSWORD" type='password' onChange={(e)=>{setPassword(e.target.value)}}/>
+            <L.detail placeholder="PHONE NUMBEER" type='number' onChange={(e)=>{setPhone(e.target.value)}}/>
             <L.go onClick={()=>{
               axios
-              .post('/', { id: id, password: password, type: selected })
+              .post('/', { id: id, password: password, phone:phone, type: selected })
               .then((result) => {navigate("/")})
               .catch(()=>{alert('이미 존재하는 아이디입니다😥')})
             }}>SIGN UP</L.go>

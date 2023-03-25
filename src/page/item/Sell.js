@@ -1,11 +1,14 @@
 import Header from "../../component/Header"
 import * as S from "../../styled/sell";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Sell() {
 
   const banklist = ['NH 농협', '카카오뱅크', 'KB 국민', '신한', '우리', '토스뱅크', 'IBK 기업은행', '하나', '새마을', '부산', '대구', '케이뱅크', '신협', '우체국', 'SC 제일', '경남', '광주', '수협', '전북', '저축은행', '제주','씨티', 'KDB 산업', '산림조합', 'SBI 저축은행', 'BOA', '중국', 'HSBC', '중국공상', '도이치', 'JP모건', 'BNO파라바', '중국건설']
   const[imageSrc, setImageSrc]=useState('');
+
+  let navigate = useNavigate();
 
   const  encoderFileToBase64 = (fileBlob)=>{
     const reader = new FileReader();
@@ -58,7 +61,9 @@ function Sell() {
           <S.contents>
             <S.content  placeholder="상세 내용을 입력해주세요."/>
           </S.contents>
-          <S.create>폼 만들기</S.create>
+          <S.create onClick={()=>{
+            navigate('/buy')
+          }}>폼 만들기</S.create>
         </S.list>
       </S.box>
     </>

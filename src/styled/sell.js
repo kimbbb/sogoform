@@ -33,7 +33,7 @@ export const imgbox = styled.div`
   width:100%;
   height:300px;
   background-color:#F5F5F5;
-  margin:30px 0px;
+  margin:20px 0px;
   border:none;
   position:relative;
 `
@@ -149,8 +149,8 @@ export const create = styled.button`
   color:#fff;
   border:none;
   border-radius:15px;
-  margin-top:30px;
+  margin:30px 0px 10px 0px;
   &:focus{
-    outline: 3px solid rgba(116, 233, 163, 0.5);
+    outline: 6px solid rgba(116, 233, 163, 0.5);
   }
 `
