@@ -4,6 +4,7 @@ import Sell from "./page/item/Sell";
 import Main from './page/main/Main'
 import Login from './page/user/Login'
 import Sign from './page/user/Sign'
+import Form from "./page/form/Form";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route path="/main" element={<Main/>}/>
       <Route path="/sell" element={<Sell/>}/>
       <Route path="/buy" element={<Buy/>}/>
+      <Route path="/form" element={<Form/>}/>
     </Routes>
     </>
   );
