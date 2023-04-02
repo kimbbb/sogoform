@@ -27,7 +27,7 @@ export const list = styled.div`
   position:absolute;
   left:50%;
   transform:translate(-50%);
-  `
+`
   
 export const imgbox = styled.div`
   width:100%;
@@ -36,16 +36,31 @@ export const imgbox = styled.div`
   margin:20px 0px;
   border:none;
   position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color: #c8c8c8;
+  font-size:18px;
 `
 
-export const uplode = styled.input`
-  margin:20px;
-  position:relative;
+
+
+export const upload = styled.input`
+  display:none;
 `
 
 export const preview = styled.div`
   height:100%;
   width:100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`
+
+export const imgfile = styled.img`
+  max-width: 100%;
+  max-height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;

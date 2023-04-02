@@ -2,6 +2,7 @@ import Header from "../../component/Header"
 import * as S from "../../styled/sell";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import $ from "jquery"
 
 function Sell() {
 
@@ -21,22 +22,21 @@ function Sell() {
     });
   };
 
+  if(imageSrc!=''){
+    console.log(imageSrc)
+    $('#add').css('display', 'none')
+  }
+
+
   return(
     <>
     <Header/>
       <S.box>
         <S.list>
-          <S.imgbox>
-            <S.preview>{imageSrc && <img style={
-              {
-                height: '100%', 
-                maxWidth:'100%', 
-                position:'absolute', 
-                left:'50%', 
-                transform:'translate(-50%)' 
-              }} 
-                className="imgPreview" src={imageSrc} alt="preview-img"/>}</S.preview>
-            <S.uplode type="file" accept="image/*" onChange={(e)=>{encoderFileToBase64(e.target.files[0])}}/>
+          <S.imgbox onClick={()=>{$('#upload').click()}}>
+            <p id='add'>사진추가</p>
+            <S.preview>{imageSrc && <S.imgfile src={imageSrc} alt="preview-img"/>}</S.preview>
+            <S.upload id='upload' type="file" accept="image/*" onChange={(e)=>{encoderFileToBase64(e.target.files[0])}}/>
           </S.imgbox>
           
           <S.text>상품명</S.text>
