@@ -7,6 +7,7 @@ import Sign from './page/user/Sign'
 import Form from "./page/form/Form";
 import Detail from "./page/item/Detail";
 import SellForm from "./page/form/Sell";
+import BuyForm from "./page/form/Buy";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="/form" element={<Form/>}/>
       <Route path="/detail" element={<Detail/>}/>
       <Route path="/form/sell" element={<SellForm/>}/>
+      <Route path="/form/buy" element={<BuyForm/>}/>
     </Routes>
     </>
   );

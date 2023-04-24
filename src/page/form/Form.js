@@ -9,7 +9,7 @@ function Form() {
     <Header/>
     <F.box>
       <F.movebtn onClick={()=>{navigate('/form/sell')}}>판매 폼 관리</F.movebtn>
-      <F.movebtn>구매 폼 관리</F.movebtn>
+      <F.movebtn onClick={()=>{navigate('/form/buy')}}>구매 폼 관리</F.movebtn>
     </F.box>
     </>
   )

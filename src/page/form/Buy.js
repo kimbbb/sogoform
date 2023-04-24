@@ -1,6 +1,6 @@
 import Header from "../../component/Header";
 import * as F from "../../styled/form";
-function Sell() {
+function Buy() {
   return (
     <>
       <F.tablebox>
@@ -10,7 +10,6 @@ function Sell() {
               <F.th width="70">번호</F.th>
               <F.th width="500">제목</F.th>
               <F.th width="100">조회</F.th>
-              <F.th width="100">삭제</F.th>
             </F.tr>
           </F.head>
           <F.tbody>
@@ -20,9 +19,6 @@ function Sell() {
               <F.td><F.detail onClick={()=>{
                 
               }}>조회</F.detail></F.td>
-              <F.td><F.del onClick={()=>{
-                
-              }}>삭제</F.del></F.td>
             </F.tr>
           </F.tbody>
         </F.table>
@@ -33,4 +29,4 @@ function Sell() {
   );
 }
 
-export default Sell;
+export default Buy;

@@ -40,7 +40,8 @@ export const table=styled.table`
 
 export const head = styled.thead`
   height:50px;
-  background-color:#74E9A3;
+  background-color:#000;
+  font-size:18px;
   border:none;
   color:#fff;
 `
@@ -57,5 +58,24 @@ export const td = styled.td`
   height:50px;
   background-color:#fff;
   border-bottom: 1px solid #f5f5f5;
+`
+
+export const del = styled.button`
+  width:70%;
+  height:80%;
+  border:none;
+  border-radius:10px;
+  background-color:#FF9797;
+  color:#fff;
+  font-size:14px;
+`
+export const detail = styled.button`
+  width:70%;
+  height:80%;
+  border:none;
+  border-radius:10px;
+  background-color:#74E9A3;
+  color:#fff;
+  font-size:14px;
 `
 
