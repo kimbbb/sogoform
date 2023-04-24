@@ -6,7 +6,7 @@ import Login from './page/user/Login'
 import Sign from './page/user/Sign'
 import Form from "./page/form/Form";
 import Detail from "./page/item/Detail";
-
+import SellForm from "./page/form/Sell";
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
       <Route path="/buy" element={<Buy/>}/>
       <Route path="/form" element={<Form/>}/>
       <Route path="/detail" element={<Detail/>}/>
+      <Route path="/form/sell" element={<SellForm/>}/>
     </Routes>
     </>
   );
