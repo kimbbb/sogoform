@@ -7,6 +7,7 @@ import $ from "jquery"
 function Sell() {
 
   const banklist = ['NH 농협', '카카오뱅크', 'KB 국민', '신한', '우리', '토스뱅크', 'IBK 기업은행', '하나', '새마을', '부산', '대구', '케이뱅크', '신협', '우체국', 'SC 제일', '경남', '광주', '수협', '전북', '저축은행', '제주','씨티', 'KDB 산업', '산림조합', 'SBI 저축은행', 'BOA', '중국', 'HSBC', '중국공상', '도이치', 'JP모건', 'BNO파라바', '중국건설']
+  banklist.sort()
   const[imageSrc, setImageSrc]=useState('');
 
   let navigate = useNavigate();
