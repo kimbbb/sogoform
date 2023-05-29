@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import * as L from "../../styled/login"
 import axios from "axios";
+import background from "../../images/bg.png"
 
 
 function Login() {
@@ -13,8 +14,8 @@ function Login() {
   return(
     <>
     <L.bg>
+      <L.bgimg  src={background}/>
       <L.box>
-
         <L.main>
           <L.contents>
             <L.header>LOGIN</L.header>

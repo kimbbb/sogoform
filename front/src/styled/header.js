@@ -4,6 +4,7 @@ export const head = styled.div`
   display: flex;
   align-items:center;
   width:100%;
+  min-width:840px;
   height:80px;
   background-color:#fff;
   box-shadow: 0px 4px 20px rgba(130, 130, 130, 0.08);

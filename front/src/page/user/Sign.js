@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import * as L from "../../styled/login"
 import axios from "axios";
+import background from "../../images/bg.png"
 
 
 function Sign() {
@@ -20,8 +21,8 @@ function Sign() {
   return(
     <>
     <L.bg>
+      <L.bgimg  src={background}/>
       <L.box>
-
         <L.main>
           <L.contents>
             <L.header>SIGN UP</L.header>

@@ -1,11 +1,14 @@
 import styled from "styled-components";
-import background from "../images/bg.png"
 import iconbg from "../images/icon.png";
 
 export const bg=styled.div`
-  background-image:url(${background});
   width:100%;
   height:100vh;
+`
+
+export const bgimg = styled.img`
+  width:100%;
+  height:100%;
 `
 
 export const box=styled.div`
