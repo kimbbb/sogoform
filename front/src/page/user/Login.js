@@ -26,10 +26,11 @@ function Login() {
               setPassword(e.target.value)
             }}/>
             <L.go onClick={()=>{
-              axios
-              .post('/', { id: id, password: password })
-              .then((result) => {navigate("/main")})
-              .catch((result)=>{alert('로그인에 실패하셨습니다 😥')});
+              navigate("/main")
+              // axios
+              // .post('/', { id: id, password: password })
+              // .then((result) => {navigate("/main")})
+              // .catch((result)=>{alert('로그인에 실패하셨습니다 😥')});
             }}>LOGIN</L.go>
             <L.text>아직 회원이 아니라면? <L.move href="/sign">회원가입</L.move></L.text>
           </L.contents>

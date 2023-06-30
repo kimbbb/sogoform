@@ -30,10 +30,11 @@ function Sign() {
             <L.detail placeholder="PASSWORD" type='password' onChange={(e)=>{setPassword(e.target.value)}}/>
             <L.detail placeholder="PHONE NUMBEER" type='number' onChange={(e)=>{setPhone(e.target.value)}}/>
             <L.go onClick={()=>{
-              axios
-              .post('/', { id: id, password: password, phone:phone, type: selected })
-              .then((result) => {navigate("/")})
-              .catch(()=>{alert('회원가입에 실패하셨습니다😥')})
+              navigate("/")
+              // axios
+              // .post('/', { id: id, password: password, phone:phone, type: selected })
+              // .then((result) => {navigate("/")})
+              // .catch(()=>{alert('회원가입에 실패하셨습니다😥')})
             }}>SIGN UP</L.go>
             <L.text>이미 회원이라면? <L.move href="/">로그인</L.move></L.text>
           </L.contents>
